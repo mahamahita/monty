@@ -14,7 +14,7 @@
 #define Buffsize 30
 
 /**
- * struct stack_s - Doubly linked list representation of a stack
+ * struct stack_s - Doubly linked list representation of a stack 
  * @n: Integer
  * @prev: Points to the previous element of the stack 
  * @next: Points to the next element of the stack 
@@ -32,9 +32,10 @@ typedef struct stack_s
 /**
  * struct instruction_s - Opcode and its function
  * @opcode: the opcode
- * @f: function to handle the opcode
- * Description: opcode and its function
- * for stack and queues and LIFO and  FIFO
+ * @f: function to handle opcode
+ *
+ * Description: opcode and function
+ * for stack and  queues and LIFO and FIFO
  */
 typedef struct instruction_s
 {
@@ -44,14 +45,14 @@ typedef struct instruction_s
 
 
 /**
- * struct glob_var - golbal variables
- * @file: file name
- * @buff: Getline buffer
- * @tmp: Getline counter
- * @dict: instruction dictionary
- * @head: pointer to list
- * @line_number: Stores file current line
- * @MODE: Program configuration stack or queue
+ * struct glob_var or golbal variables
+ * @file: file name.
+ * @buff: Getline buffer.
+ * @tmp: Getline counter.
+ * @dict: instruction dictionary.
+ * @head: pointer to list.
+ * @line_number: Stores file current line.
+ * @MODE: Program configuration stack or queue.
  */
 typedef struct glob_var
 {
@@ -79,6 +80,7 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void divi(stack_t **stack, unsigned int line_number);
+
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
